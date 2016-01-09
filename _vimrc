@@ -20,3 +20,6 @@ set softtabstop=4
 set expandtab
 
 set smartindent
+
+" 设置交换文件目录
+set directory=.,$TEMP
