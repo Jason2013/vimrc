@@ -2,7 +2,7 @@ set encoding=utf-8
 set termencoding=utf-8
 set number
 
-set fileencodings=utf-8,gbk
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set fileformat=dos
 
@@ -24,3 +24,6 @@ set smartindent
 
 " 设置交换文件目录
 set directory=.,$TEMP
+
+" 设置 unnamed 寄存器与系统剪切板绑定
+set clipboard=unnamed
