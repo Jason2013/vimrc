@@ -22,6 +22,9 @@ set shiftwidth=4
 
 set smartindent
 
+" 设置不可见字符
+set listchars=eol:$,tab:>-,trail:@,extends:>,precedes:<
+
 " 设置交换文件目录
 set directory=.,$TEMP
 
