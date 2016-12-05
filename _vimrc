@@ -10,6 +10,9 @@ language messages zh_CN.utf-8
 
 " 开启语法着色
 syntax on
+
+" 从文件开头解析语法着色
+syntax sync fromstart
 colorscheme desert
 
 " 开启光标位置显示
@@ -30,3 +33,13 @@ set directory=.,$TEMP
 
 " 设置 unnamed 寄存器与系统剪切板绑定
 set clipboard=unnamed
+
+" 设置 path 参数
+set path+=**
+
+" 设置宽屏显示查找项
+set wildmenu
+
+nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
+nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
+nnoremap <F8> :edit <C-R>+<CR>
