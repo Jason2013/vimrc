@@ -2,7 +2,6 @@
 let s:path = fnamemodify(expand('%'), ':p:h')
 if stridx(&runtimepath, s:path) == -1
      let &runtimepath = s:path . "," . &runtimepath
-     echom &runtimepath
 endif
 
 set encoding=utf-8
