@@ -1,8 +1,13 @@
 " 设置自定义文件目录
-let s:path = fnamemodify(expand('%'), ':p:h')
-if stridx(&runtimepath, s:path) == -1
-     let &runtimepath = s:path . "," . &runtimepath
-endif
+
+function! s:SetRuntimePath(path)
+    if stridx(&runtimepath, a:path) == -1
+         let &runtimepath = a:path . "," . &runtimepath
+    endif
+endfunction
+
+let s:path = expand('<sfile>:p:h')
+call s:SetRuntimePath(s:path)
 
 set encoding=utf-8
 set termencoding=utf-8
