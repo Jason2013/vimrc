@@ -1,9 +1,17 @@
+" 设置自定义文件目录
+let s:path = fnamemodify(expand('%'), ':p:h')
+if stridx(&runtimepath, s:path) == -1
+     let &runtimepath = s:path . "," . &runtimepath
+     echom &runtimepath
+endif
+
 set encoding=utf-8
 set termencoding=utf-8
 set number
 
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
+set fileformats=dos,unix,mac
 set fileformat=dos
 
 language messages zh_CN.utf-8
@@ -37,9 +45,18 @@ set clipboard=unnamed
 " 设置 path 参数
 set path+=**
 
+" 宽菜单
+set wildmenu
+
 " 设置宽屏显示查找项
 set wildmenu
 
+" 映射
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
 nnoremap <F8> :edit <C-R>+<CR>
+
+" 编辑配置文件
+" let mapleader = "," " default "\\"
+nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
