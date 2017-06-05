@@ -55,6 +55,10 @@ set wildmenu
 " 设置宽屏显示查找项
 set wildmenu
 
+" 设置命令历史大小及命令历史窗口高度
+set history=100
+set cmdwinheight=10
+
 " 映射
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
