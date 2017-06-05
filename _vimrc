@@ -68,3 +68,10 @@ nnoremap <F8> :edit <C-R>+<CR>
 " let mapleader = "," " default "\\"
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
+
+" ini 文件注释、取消注释
+nnoremap <leader>c :s/\v^/; /g<CR>
+nnoremap <leader>u :s/\v^; ?//g<CR>
+
+vnoremap <leader>c :s/\v^/; /g<CR>
+vnoremap <leader>u :s/\v^; ?//g<CR>
