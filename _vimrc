@@ -60,6 +60,8 @@ set history=100
 set cmdwinheight=10
 
 " 映射
+nnoremap <F2> :MRU<CR>
+nnoremap <S-F2> :MRU 
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
 nnoremap <F8> :edit <C-R>+<CR>
