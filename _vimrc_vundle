@@ -30,6 +30,8 @@ Plugin 'tpope/vim-fugitive'
 " mru.vim : Plugin to manage Most Recently Used (MRU) files
 " http://www.vim.org/scripts/script.php?script_id=521
 Plugin 'yegappan/mru'
+let g:MRU_Max_Entries=1000
+let g:MRU_Window_Height=15
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
