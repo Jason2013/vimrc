@@ -33,6 +33,10 @@ Plugin 'yegappan/mru'
 let g:MRU_Max_Entries=1000
 let g:MRU_Window_Height=15
 
+" commentary.vim : Comment stuff out; takes a motion as a target 
+" http://www.vim.org/scripts/script.php?script_id=3695
+Plugin 'tpope/vim-commentary'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
