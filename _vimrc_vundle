@@ -26,7 +26,10 @@ Plugin 'tpope/vim-fugitive'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
-Plugin 'mru.vim'
+
+" mru.vim : Plugin to manage Most Recently Used (MRU) files
+" http://www.vim.org/scripts/script.php?script_id=521
+Plugin 'yegappan/mru'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
