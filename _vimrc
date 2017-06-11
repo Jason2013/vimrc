@@ -18,11 +18,17 @@ set fileencoding=utf-8
 set fileformats=dos,unix,mac
 set fileformat=dos
 
-" 设置状态栏，显示常用信息
+" 设置状态行，显示常用信息
 set statusline=%F%m%r%h%w%=\ [ft=%Y]\ %{\"[fenc=\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [ff=%{&ff}]\ [asc=\%03.3b]\ [hex=\%02.2B]\ [pos=%04l,%04v][%p%%]\ [len=%L]
 " set statusline=%F%m%r%h%w%=\ [TYPE=%Y]\ %{\"[FILEENCODING=\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [FORMAT=%{&ff}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+
+" 总是显示状态行
 set laststatus=2
 
+"设置为双字宽显示，否则无法完整显示如:☆
+set ambiwidth=double
+
+" 设置中文提示
 language messages zh_CN.utf-8
 
 " 开启语法着色
