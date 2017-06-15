@@ -37,6 +37,10 @@ let g:MRU_Window_Height=15
 " http://www.vim.org/scripts/script.php?script_id=3695
 Plugin 'tpope/vim-commentary'
 
+" VIM Table Mode for instant table creation.
+" https://github.com/dhruvasagar/vim-table-mode
+Plugin 'dhruvasagar/vim-table-mode'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
