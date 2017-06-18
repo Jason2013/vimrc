@@ -43,7 +43,12 @@ Plugin 'dhruvasagar/vim-table-mode'
 
 " The NERD Tree
 " https://github.com/scrooloose/nerdtree
-Plugin 'scrooloose/nerdtree'
+" git checkout 5.0.0
+" Add {'pinned': 1} to forbid Vundle to update this plugin
+Plugin 'scrooloose/nerdtree', {'pinned': 1}
+let g:NERDTreeShowLineNumbers=1
+let g:NERDTreeShowBookmarks=1
+let g:NERDTreeWinSize=50
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
