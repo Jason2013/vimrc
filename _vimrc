@@ -77,6 +77,7 @@ nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
 nnoremap <F8> :edit <C-R>+<CR>
 nnoremap <C-N> :tabe<CR>
+nnoremap <F4> :NERDTreeToggle<CR>
 
 " 编辑配置文件
 " let mapleader = "," " default "\\"
