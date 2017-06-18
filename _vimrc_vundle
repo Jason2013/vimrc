@@ -58,6 +58,12 @@ Plugin 'restore_view.vim'
 " https://github.com/godlygeek/tabular
 Plugin 'godlygeek/tabular'
 
+" Markdown
+" https://github.com/plasticboy/vim-markdown
+" git checkout 2.0.0
+" Add {'pinned': 1} to forbid Vundle to update this plugin
+Plugin 'plasticboy/vim-markdown', {'pinned': 1}
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
