@@ -50,6 +50,10 @@ let g:NERDTreeShowLineNumbers=1
 let g:NERDTreeShowBookmarks=1
 let g:NERDTreeWinSize=50
 
+" restore_view.vim : A plugin for automatically restoring file's cursor position and folding
+" http://www.vim.org/scripts/script.php?script_id=4021
+Plugin 'restore_view.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
