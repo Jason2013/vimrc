@@ -54,6 +54,10 @@ let g:NERDTreeWinSize=50
 " http://www.vim.org/scripts/script.php?script_id=4021
 Plugin 'restore_view.vim'
 
+" Tabular
+" https://github.com/godlygeek/tabular
+Plugin 'godlygeek/tabular'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
