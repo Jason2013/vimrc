@@ -65,6 +65,12 @@ Plugin 'godlygeek/tabular'
 " Add {'pinned': 1} to forbid Vundle to update this plugin
 Plugin 'plasticboy/vim-markdown', {'pinned': 1}
 
+" surround.vim
+" https://github.com/tpope/vim-surround
+" git checkout v2.1
+" Add {'pinned': 1} to forbid Vundle to update this plugin
+Plugin 'tpope/vim-surround', {'pinned': 1}
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
