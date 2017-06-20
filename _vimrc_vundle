@@ -14,7 +14,9 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+" git checkout v2.2
+" Add {'pinned': 1} to forbid Vundle to update this plugin
+Plugin 'tpope/vim-fugitive', {'pinned': 1}
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
