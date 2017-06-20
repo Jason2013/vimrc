@@ -49,6 +49,7 @@ Plugin 'scrooloose/nerdtree', {'pinned': 1}
 let g:NERDTreeShowLineNumbers=1
 let g:NERDTreeShowBookmarks=1
 let g:NERDTreeWinSize=50
+let g:NERDTreeBookmarksFile=fnamemodify(expand('<sfile>'), ':p:h')  . '/vimfiles/nerdtree/.NERDTreeBookmarks'
 
 " restore_view.vim : A plugin for automatically restoring file's cursor position and folding
 " http://www.vim.org/scripts/script.php?script_id=4021
