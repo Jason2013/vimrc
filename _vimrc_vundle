@@ -3,8 +3,8 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 let s:ScriptPath = fnamemodify(expand('<sfile>'), ':p:h')
-execute 'set rtp+=' . fnamemodify(expand('<sfile>'), ':p:h') . '/vimfiles/bundle/Vundle.vim'
-call vundle#begin(fnamemodify(expand('<sfile>'), ':p:h') . '/vimfiles/bundle/')
+execute 'set rtp+=' . s:ScriptPath . '/vimfiles/bundle/Vundle.vim'
+call vundle#begin(s:ScriptPath . '/vimfiles/bundle/')
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
