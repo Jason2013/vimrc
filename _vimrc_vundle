@@ -77,6 +77,14 @@ Plugin 'plasticboy/vim-markdown', {'pinned': 1}
 " Add {'pinned': 1} to forbid Vundle to update this plugin
 Plugin 'tpope/vim-surround', {'pinned': 1}
 
+" FX HLSL : Syntax Rules for Microsoft HLSL and FX files
+" http://www.vim.org/scripts/script.php?script_id=855
+Plugin 'fx.vim'
+
+" glsl.vim : Syntax file for the OpenGL Shading Language GLSL GLSlang
+" http://www.vim.org/scripts/script.php?script_id=1002
+Plugin 'glsl.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
