@@ -74,6 +74,9 @@ set wildmenu
 set history=100
 set cmdwinheight=10
 
+" 设置自动补全
+set complete=.,w,b,u,t
+
 " 映射
 nnoremap <F2> :MRU<CR>
 nnoremap <S-F2> :MRU 
