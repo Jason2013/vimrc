@@ -9,6 +9,13 @@ endfunction
 let s:path = expand('<sfile>:p:h')
 call s:SetRuntimePath(s:path)
 
+" 添加自定义常用函数
+let g:num=0
+function g:Num()
+    let g:num += 1
+    return g:num
+endfunction
+
 set encoding=utf-8
 set termencoding=utf-8
 set number
