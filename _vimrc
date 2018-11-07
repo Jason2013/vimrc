@@ -85,15 +85,17 @@ set cmdwinheight=10
 set complete=.,w,b,u,t
 
 " 映射
+inoremap <F5> <C-R>=strftime("%c")<CR>
+nnoremap <C-F4> :Bookmark<CR>
+nnoremap <C-N> :tabe<CR>
 nnoremap <F2> :MRU<CR>
-nnoremap <S-F2> :MRU 
+nnoremap <F4> :NERDTreeToggle<CR>
+nnoremap <F4> :NERDTreeToggle<CR>
+nnoremap <F5> "=strftime("%c")<CR>P
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
 nnoremap <F8> :edit <C-R>+<CR>
-nnoremap <C-N> :tabe<CR>
-nnoremap <F4> :NERDTreeToggle<CR>
-nnoremap <F4> :NERDTreeToggle<CR>
-nnoremap <C-F4> :Bookmark<CR>
+nnoremap <S-F2> :MRU 
 
 " 编辑配置文件
 " let mapleader = "," " default "\\"
