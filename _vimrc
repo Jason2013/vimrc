@@ -40,7 +40,7 @@ set laststatus=2
 set ambiwidth=double
 
 " 设置中文提示
-language messages zh_CN.utf-8
+language messages en_US.utf-8
 
 " 开启语法着色
 syntax on
