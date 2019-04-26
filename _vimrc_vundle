@@ -92,6 +92,8 @@ Plugin 'glsl.vim'
 " vim-hardtime.vim : Have Vim automatically reload a file that has changed externally
 " https://github.com/takac/vim-hardtime
 Plugin 'takac/vim-hardtime'
+let g:hardtime_default_on = 1
+let g:hardtime_timeout = 500
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
