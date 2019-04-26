@@ -85,6 +85,10 @@ Plugin 'fx.vim'
 " http://www.vim.org/scripts/script.php?script_id=1002
 Plugin 'glsl.vim'
 
+" vim-autoread.vim : Have Vim automatically reload a file that has changed externally
+" https://github.com/djoshea/vim-autoread
+Plugin 'djoshea/vim-autoread'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
