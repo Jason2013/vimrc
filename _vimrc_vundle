@@ -95,6 +95,10 @@ Plugin 'takac/vim-hardtime'
 let g:hardtime_default_on = 1
 let g:hardtime_timeout = 500
 
+" hjkl.vim : HJKL : Use H,J,K,L to explore maze 
+" https://www.vim.org/scripts/script.php?script_id=3409
+Plugin 'HJKL'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
