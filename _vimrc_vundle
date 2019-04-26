@@ -89,6 +89,10 @@ Plugin 'glsl.vim'
 " https://github.com/djoshea/vim-autoread
 Plugin 'djoshea/vim-autoread'
 
+" vim-hardtime.vim : Have Vim automatically reload a file that has changed externally
+" https://github.com/takac/vim-hardtime
+Plugin 'takac/vim-hardtime'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
