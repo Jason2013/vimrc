@@ -87,7 +87,7 @@ Plugin 'glsl.vim'
 
 " vim-autoread.vim : Have Vim automatically reload a file that has changed externally
 " https://github.com/djoshea/vim-autoread
-Plugin 'djoshea/vim-autoread'
+" Plugin 'djoshea/vim-autoread'
 
 " vim-hardtime.vim : Have Vim automatically reload a file that has changed externally
 " https://github.com/takac/vim-hardtime
