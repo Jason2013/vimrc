@@ -10,7 +10,7 @@ let s:ScriptPath = fnamemodify(expand('<sfile>'), ':p:h')
 let g:MRU_Max_Entries=1000
 let g:MRU_Window_Height=15
 let g:MRU_Exclude_Files = '\.tmp$'
-let g:MRU_File=s:ScriptPath . "/vimfiles/mru/_vim_mru_files"
+let g:MRU_File=s:ScriptPath . "/pack/yegappan/start/mru/_vim_mru_files"
 
 " commentary.vim : Comment stuff out; takes a motion as a target 
 " http://www.vim.org/scripts/script.php?script_id=3695
