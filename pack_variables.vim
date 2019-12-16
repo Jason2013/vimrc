@@ -1,0 +1,106 @@
+" set nocompatible              " be iMproved, required
+" filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+let s:ScriptPath = fnamemodify(expand('<sfile>'), ':p:h')
+
+" mru.vim : Plugin to manage Most Recently Used (MRU) files
+" http://www.vim.org/scripts/script.php?script_id=521
+" Plugin 'yegappan/mru'
+let g:MRU_Max_Entries=1000
+let g:MRU_Window_Height=15
+let g:MRU_Exclude_Files = '\.tmp$'
+let g:MRU_File=s:ScriptPath . "/vimfiles/mru/_vim_mru_files"
+
+" commentary.vim : Comment stuff out; takes a motion as a target 
+" http://www.vim.org/scripts/script.php?script_id=3695
+" Plugin 'tpope/vim-commentary'
+
+" " VIM Table Mode for instant table creation.
+" " https://github.com/dhruvasagar/vim-table-mode
+" Plugin 'dhruvasagar/vim-table-mode'
+
+" " The NERD Tree
+" " https://github.com/scrooloose/nerdtree
+" " git checkout 5.0.0
+" " Add {'pinned': 1} to forbid Vundle to update this plugin
+" Plugin 'scrooloose/nerdtree', {'pinned': 1}
+" let g:NERDTreeShowLineNumbers=1
+" let g:NERDTreeShowBookmarks=1
+" let g:NERDTreeWinSize=50
+" let g:NERDTreeHijackNetrw=0
+" let g:NERDTreeBookmarksFile=s:ScriptPath . '/vimfiles/nerdtree/.NERDTreeBookmarks'
+
+" restore_view.vim : A plugin for automatically restoring file's cursor position and folding
+" http://www.vim.org/scripts/script.php?script_id=4021
+" Plugin 'restore_view.vim'
+
+" Tabular
+" https://github.com/godlygeek/tabular
+" Plugin 'godlygeek/tabular'
+
+" Markdown
+" https://github.com/plasticboy/vim-markdown
+" git checkout 2.0.0
+" Add {'pinned': 1} to forbid Vundle to update this plugin
+" Plugin 'plasticboy/vim-markdown', {'pinned': 1}
+
+" surround.vim
+" https://github.com/tpope/vim-surround
+" git checkout v2.1
+" Add {'pinned': 1} to forbid Vundle to update this plugin
+" Plugin 'tpope/vim-surround', {'pinned': 1}
+
+" FX HLSL : Syntax Rules for Microsoft HLSL and FX files
+" http://www.vim.org/scripts/script.php?script_id=855
+" Plugin 'fx.vim'
+
+" glsl.vim : Syntax file for the OpenGL Shading Language GLSL GLSlang
+" http://www.vim.org/scripts/script.php?script_id=1002
+" Plugin 'glsl.vim'
+
+" vim-autoread.vim : Have Vim automatically reload a file that has changed externally
+" https://github.com/djoshea/vim-autoread
+" Plugin 'djoshea/vim-autoread'
+
+" vim-hardtime.vim : Have Vim automatically reload a file that has changed externally
+" https://github.com/takac/vim-hardtime
+" Plugin 'takac/vim-hardtime'
+let g:hardtime_default_on = 1
+let g:hardtime_timeout = 500
+
+" " hjkl.vim : HJKL : Use H,J,K,L to explore maze 
+" " https://www.vim.org/scripts/script.php?script_id=3409
+" Plugin 'HJKL'
+
+" The ultimate snippet solution for python enabled Vim.
+" https://github.com/vim-scripts/UltiSnips
+" Track the engine.
+" Plugin 'SirVer/ultisnips'
+
+" " Snippets are separated from the engine. Add this if you want them:
+" Plugin 'honza/vim-snippets'
+
+" " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" " If you want :UltiSnipsEdit to split your window.
+" let g:UltiSnipsEditSplit="vertical"
+" let g:UltiSnipsSnippetDirectories=["UltiSnips", s:ScriptPath . "/MySnippets"]
+
+" All of your Plugins must be added before the following line
+" call vundle#end()            " required
+" filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this linenoremap <leader>u :s/\v^; ?//g<CR>

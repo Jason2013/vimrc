@@ -108,3 +108,7 @@ nnoremap <leader>u :s/\v^; ?//g<CR>
 
 vnoremap <leader>c :s/\v^/; /g<CR>
 vnoremap <leader>u :s/\v^; ?//g<CR>
+
+" 设置 pack
+let &packpath=&packpath . "," . s:path
+call execute("source " . s:path . "/pack_variables.vim")
