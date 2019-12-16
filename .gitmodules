@@ -4,3 +4,6 @@
 [submodule "pack/yegappan/start/mru"]
 	path = pack/yegappan/start/mru
 	url = https://github.com/yegappan/mru.git
+[submodule "pack/tpope/start/vim-commentary"]
+	path = pack/tpope/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
