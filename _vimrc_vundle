@@ -11,24 +11,24 @@ call vundle#begin(s:ScriptPath . '/vimfiles/bundle/')
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" git checkout v2.2
-" Add {'pinned': 1} to forbid Vundle to update this plugin
-Plugin 'tpope/vim-fugitive', {'pinned': 1}
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
+" " The following are examples of different formats supported.
+" " Keep Plugin commands between vundle#begin/end.
+" " plugin on GitHub repo
+" " git checkout v2.2
+" " Add {'pinned': 1} to forbid Vundle to update this plugin
+" Plugin 'tpope/vim-fugitive', {'pinned': 1}
+" " plugin from http://vim-scripts.org/vim/scripts.html
+" " Plugin 'L9'
+" " Git plugin not hosted on GitHub
+" " Plugin 'git://git.wincent.com/command-t.git'
+" " git repos on your local machine (i.e. when working on your own plugin)
+" " Plugin 'file:///home/gmarik/path/to/plugin'
+" " The sparkup vim script is in a subdirectory of this repo called vim.
+" " Pass the path to set the runtimepath properly.
+" " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" " Install L9 and avoid a Naming conflict if you've already installed a
+" " different version somewhere else.
+" " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " mru.vim : Plugin to manage Most Recently Used (MRU) files
 " http://www.vim.org/scripts/script.php?script_id=521
@@ -42,20 +42,20 @@ let g:MRU_File=s:ScriptPath . "/vimfiles/mru/_vim_mru_files"
 " http://www.vim.org/scripts/script.php?script_id=3695
 Plugin 'tpope/vim-commentary'
 
-" VIM Table Mode for instant table creation.
-" https://github.com/dhruvasagar/vim-table-mode
-Plugin 'dhruvasagar/vim-table-mode'
+" " VIM Table Mode for instant table creation.
+" " https://github.com/dhruvasagar/vim-table-mode
+" Plugin 'dhruvasagar/vim-table-mode'
 
-" The NERD Tree
-" https://github.com/scrooloose/nerdtree
-" git checkout 5.0.0
-" Add {'pinned': 1} to forbid Vundle to update this plugin
-Plugin 'scrooloose/nerdtree', {'pinned': 1}
-let g:NERDTreeShowLineNumbers=1
-let g:NERDTreeShowBookmarks=1
-let g:NERDTreeWinSize=50
-let g:NERDTreeHijackNetrw=0
-let g:NERDTreeBookmarksFile=s:ScriptPath . '/vimfiles/nerdtree/.NERDTreeBookmarks'
+" " The NERD Tree
+" " https://github.com/scrooloose/nerdtree
+" " git checkout 5.0.0
+" " Add {'pinned': 1} to forbid Vundle to update this plugin
+" Plugin 'scrooloose/nerdtree', {'pinned': 1}
+" let g:NERDTreeShowLineNumbers=1
+" let g:NERDTreeShowBookmarks=1
+" let g:NERDTreeWinSize=50
+" let g:NERDTreeHijackNetrw=0
+" let g:NERDTreeBookmarksFile=s:ScriptPath . '/vimfiles/nerdtree/.NERDTreeBookmarks'
 
 " restore_view.vim : A plugin for automatically restoring file's cursor position and folding
 " http://www.vim.org/scripts/script.php?script_id=4021
@@ -95,26 +95,26 @@ Plugin 'takac/vim-hardtime'
 let g:hardtime_default_on = 1
 let g:hardtime_timeout = 500
 
-" hjkl.vim : HJKL : Use H,J,K,L to explore maze 
-" https://www.vim.org/scripts/script.php?script_id=3409
-Plugin 'HJKL'
+" " hjkl.vim : HJKL : Use H,J,K,L to explore maze 
+" " https://www.vim.org/scripts/script.php?script_id=3409
+" Plugin 'HJKL'
 
 " The ultimate snippet solution for python enabled Vim.
 " https://github.com/vim-scripts/UltiSnips
 " Track the engine.
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 
-" Snippets are separated from the engine. Add this if you want them:
-Plugin 'honza/vim-snippets'
+" " Snippets are separated from the engine. Add this if you want them:
+" Plugin 'honza/vim-snippets'
 
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsSnippetDirectories=["UltiSnips", s:ScriptPath . "/MySnippets"]
+" " If you want :UltiSnipsEdit to split your window.
+" let g:UltiSnipsEditSplit="vertical"
+" let g:UltiSnipsSnippetDirectories=["UltiSnips", s:ScriptPath . "/MySnippets"]
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
