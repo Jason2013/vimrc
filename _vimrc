@@ -91,7 +91,7 @@ nnoremap <C-N> :tabe<CR>
 nnoremap <F2> :MRU<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
-nnoremap <F5> "=strftime("%c")<CR>P
+nnoremap <F5> :e!<CR>
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
 nnoremap <F8> :edit <C-R>+<CR>
