@@ -15,6 +15,11 @@ let g:MRU_File=s:ScriptPath . "/pack/yegappan/start/mru/_vim_mru_files"
 " commentary.vim : Comment stuff out; takes a motion as a target 
 " http://www.vim.org/scripts/script.php?script_id=3695
 " Plugin 'tpope/vim-commentary'
+"vim-commentary
+"为python和shell等添加注释
+autocmd FileType python,shell,coffee set commentstring=#\ %s
+"修改注释风格
+autocmd FileType java,c,cpp set commentstring=//\ %s
 
 " " VIM Table Mode for instant table creation.
 " " https://github.com/dhruvasagar/vim-table-mode
