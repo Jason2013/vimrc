@@ -1,9 +1,6 @@
-[submodule "vimfiles/bundle/Vundle.vim"]
-	path = vimfiles/bundle/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim.git
 [submodule "pack/yegappan/start/mru"]
 	path = pack/yegappan/start/mru
-	url = https://github.com/yegappan/mru.git
+	url = https://github.com/yegappan/mru
 [submodule "pack/tpope/start/vim-commentary"]
 	path = pack/tpope/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git

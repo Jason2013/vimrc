@@ -24,9 +24,11 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set fileformats=dos,unix,mac
 set fileformat=dos
+set guifont=JetBrains_Mono:h13:cANSI:qDRAFT
 
 set viewdir=
 let &viewdir = s:path . "/vimfiles/view"
+let &packpath = s:path
 
 " 设置状态行，显示常用信息
 set statusline=%F%m%r%h%w%=\ [%Y]\ %{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [%{&ff}]\ [\%03.3b]\ [\%02.2BH]\ [%04l,%04v][%p%%]\ [%L]
