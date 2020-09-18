@@ -24,7 +24,8 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set fileformats=dos,unix,mac
 set fileformat=dos
-set guifont=JetBrains_Mono:h13:cANSI:qDRAFT
+set guifont=JetBrains_Mono:h14:cANSI:qDRAFT
+set guifontwide=幼圆:h16:cGB2312:qDRAFT
 
 set viewdir=
 let &viewdir = s:path . "/vimfiles/view"
