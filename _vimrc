@@ -32,7 +32,7 @@ let &viewdir = s:path . "/vimfiles/view"
 " let &packpath = s:path
 
 " 设置状态行，显示常用信息
-set statusline=%F%m%r%h%w%=\ [%Y]\ %{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [%{&ff}]\ [\%03.3b]\ [\%02.2BH]\ [%04l,%04v][%p%%]\ [%L]
+set statusline=%F%m%r%h%w%=\ [%Y]\ %{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [%{&ff}]\ [\%02.8b]\ [\%02.8BH]\ [%04l,%04v][%p%%]\ [%L]
 " set statusline=%F%m%r%h%w%=\ [ft=%Y]\ %{\"[fenc=\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [ff=%{&ff}]\ [asc=\%03.3b]\ [hex=\%02.2B]\ [pos=%04l,%04v][%p%%]\ [len=%L]
 " set statusline=%F%m%r%h%w%=\ [TYPE=%Y]\ %{\"[FILEENCODING=\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [FORMAT=%{&ff}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 
@@ -66,7 +66,10 @@ set smartindent
 set listchars=eol:$,tab:>-,trail:@,extends:>,precedes:<
 
 " 设置交换文件目录
-set directory=.,$TEMP
+"set directory=.,$TEMP
+let &directory = s:path . "/swp/dir//"
+let &backupdir = s:path . "/swp/bdir//"
+let &undodir = s:path . "/swp/udir//"
 
 " 设置 unnamed 寄存器与系统剪切板绑定
 set clipboard=unnamed
