@@ -91,7 +91,11 @@ set cmdwinheight=10
 set complete=.,w,b,u,t
 
 " 映射
+
+" Insert Mode
 inoremap <F5> <C-R>=strftime("%c")<CR>
+
+" Normal Mode
 nnoremap <C-F4> :Bookmark<CR>
 nnoremap <C-N> :tabe<CR>
 nnoremap <F2> :MRU<CR>
@@ -100,8 +104,12 @@ nnoremap <F4> :NERDTreeToggle<CR>
 nnoremap <F5> :e!<CR>
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
-nnoremap <F8> :edit <C-R>+<CR>
+nnoremap <F8> :tabedit <C-R>+<CR>
+nnoremap <F9> :cd <C-R>=expand("%:p:h")<CR><CR>
 nnoremap <S-F2> :MRU 
+
+" Command Mode
+cnoremap <F10> s/\v^(.+)\n(.+)\n/* [\1](\2)/gc
 
 " 编辑配置文件
 " let mapleader = "," " default "\\"
