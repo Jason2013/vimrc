@@ -93,7 +93,7 @@ set complete=.,w,b,u,t
 " 映射
 
 " Insert Mode
-inoremap <F5> <C-R>=strftime("%c")<CR>
+inoremap <F5> <C-R>=strftime("%c")<CR><ESC>yypVr-o
 
 " Normal Mode
 nnoremap <C-F4> :Bookmark<CR>
