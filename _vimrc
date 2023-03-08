@@ -68,7 +68,12 @@ set smartindent
 set listchars=eol:$,tab:>-,trail:@,extends:>,precedes:<
 
 " 设置交换文件目录
-set directory=.,$TEMP
+set swapfile
+let &directory = s:path . "/swp/dir//"
+set backup
+let &backupdir = s:path . "/swp/bdir//"
+set undofile
+let &undodir = s:path . "/swp/udir//"
 
 " 设置 unnamed 寄存器与系统剪切板绑定
 set clipboard=unnamed
