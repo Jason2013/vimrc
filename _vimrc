@@ -20,18 +20,21 @@ set encoding=utf-8
 set termencoding=utf-8
 set number
 
+filetype plugin on
+
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set fileformats=dos,unix,mac
 set fileformat=dos
-set guifont=JetBrains_Mono:h13:cANSI:qDRAFT
+"set guifont=JetBrains_Mono:h14:cANSI:qDRAFT
+"set guifontwide=幼圆:h16:cGB2312:qDRAFT
 
 set viewdir=
 let &viewdir = s:path . "/vimfiles/view"
 let &packpath = s:path
 
 " 设置状态行，显示常用信息
-set statusline=%F%m%r%h%w%=\ [%Y]\ %{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [%{&ff}]\ [\%03.3b]\ [\%02.2BH]\ [%04l,%04v][%p%%]\ [%L]
+set statusline=%F%m%r%h%w%=\ [%Y]\ %{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [%{&ff}]\ [\%02.8b]\ [\%02.8BH]\ [%04l,%04v][%p%%]\ [%L]
 " set statusline=%F%m%r%h%w%=\ [ft=%Y]\ %{\"[fenc=\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [ff=%{&ff}]\ [asc=\%03.3b]\ [hex=\%02.2B]\ [pos=%04l,%04v][%p%%]\ [len=%L]
 " set statusline=%F%m%r%h%w%=\ [TYPE=%Y]\ %{\"[FILEENCODING=\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [FORMAT=%{&ff}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 
@@ -87,13 +90,15 @@ set cmdwinheight=10
 set complete=.,w,b,u,t
 
 " 映射
-inoremap <F5> <C-R>=strftime("%c")<CR>
 nnoremap <C-F4> :Bookmark<CR>
 nnoremap <C-N> :tabe<CR>
 nnoremap <F2> :MRU<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
-nnoremap <F5> "=strftime("%c")<CR>P
+nnoremap <F5> "=strftime("%c")<CR>pyypVr=o
+inoremap <F5> <Esc>"=strftime("%c")<CR>pyypVr=o
+nnoremap <C-F5> I[<C-R>=strftime("%c")<CR>] 
+inoremap <C-F5> <Esc>I[<C-R>=strftime("%c")<CR>] 
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
 nnoremap <F8> :edit <C-R>+<CR>
