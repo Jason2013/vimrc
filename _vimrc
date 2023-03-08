@@ -20,6 +20,8 @@ set encoding=utf-8
 set termencoding=utf-8
 set number
 
+filetype plugin on
+
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set fileformats=dos,unix,mac
@@ -91,17 +93,15 @@ set cmdwinheight=10
 set complete=.,w,b,u,t
 
 " 映射
-
-" Insert Mode
-inoremap <F5> <C-R>=strftime("%c")<CR><ESC>yypVr-o
-
-" Normal Mode
 nnoremap <C-F4> :Bookmark<CR>
 nnoremap <C-N> :tabe<CR>
 nnoremap <F2> :MRU<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
-nnoremap <F5> :e!<CR>
+nnoremap <F5> "=strftime("%c")<CR>pyypVr=o
+inoremap <F5> <Esc>"=strftime("%c")<CR>pyypVr=o
+nnoremap <C-F5> I[<C-R>=strftime("%c")<CR>] 
+inoremap <C-F5> <Esc>I[<C-R>=strftime("%c")<CR>] 
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
 nnoremap <F8> :tabedit <C-R>+<CR>
