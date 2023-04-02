@@ -106,8 +106,12 @@ nnoremap <C-F5> I[<C-R>=strftime("%c")<CR>]
 inoremap <C-F5> <Esc>I[<C-R>=strftime("%c")<CR>] 
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
-nnoremap <F8> :edit <C-R>+<CR>
+nnoremap <F8> :tabedit <C-R>+<CR>
+nnoremap <F9> :cd <C-R>=expand("%:p:h")<CR><CR>
 nnoremap <S-F2> :MRU 
+
+" Command Mode
+cnoremap <F10> s/\v^(.+)\n(.+)\n/* [\1](\2)/gc
 
 " 编辑配置文件
 " let mapleader = "," " default "\\"
@@ -120,3 +124,7 @@ nnoremap <leader>u :s/\v^; ?//g<CR>
 
 vnoremap <leader>c :s/\v^/; /g<CR>
 vnoremap <leader>u :s/\v^; ?//g<CR>
+
+" 设置 pack
+let &packpath=&packpath . "," . s:path
+call execute("source " . s:path . "/pack_variables.vim")

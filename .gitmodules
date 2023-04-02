@@ -7,3 +7,9 @@
 [submodule "pack/tpope/start/vim-surround"]
 	path = pack/tpope/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/takac/start/vim-hardtime"]
+	path = pack/takac/start/vim-hardtime
+	url = https://github.com/takac/vim-hardtime.git
+[submodule "pack/martinda/start/Jenkinsfile-vim-syntax"]
+	path = pack/martinda/start/Jenkinsfile-vim-syntax
+	url = https://github.com/martinda/Jenkinsfile-vim-syntax

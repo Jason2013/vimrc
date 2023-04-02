@@ -1,46 +1,25 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" set nocompatible              " be iMproved, required
+" filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 let s:ScriptPath = fnamemodify(expand('<sfile>'), ':p:h')
-execute 'set rtp+=' . s:ScriptPath . '/vimfiles/bundle/Vundle.vim'
-call vundle#begin(s:ScriptPath . '/vimfiles/bundle/')
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" " The following are examples of different formats supported.
-" " Keep Plugin commands between vundle#begin/end.
-" " plugin on GitHub repo
-" " git checkout v2.2
-" " Add {'pinned': 1} to forbid Vundle to update this plugin
-" Plugin 'tpope/vim-fugitive', {'pinned': 1}
-" " plugin from http://vim-scripts.org/vim/scripts.html
-" " Plugin 'L9'
-" " Git plugin not hosted on GitHub
-" " Plugin 'git://git.wincent.com/command-t.git'
-" " git repos on your local machine (i.e. when working on your own plugin)
-" " Plugin 'file:///home/gmarik/path/to/plugin'
-" " The sparkup vim script is in a subdirectory of this repo called vim.
-" " Pass the path to set the runtimepath properly.
-" " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" " Install L9 and avoid a Naming conflict if you've already installed a
-" " different version somewhere else.
-" " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " mru.vim : Plugin to manage Most Recently Used (MRU) files
 " http://www.vim.org/scripts/script.php?script_id=521
-Plugin 'yegappan/mru'
+" Plugin 'yegappan/mru'
 let g:MRU_Max_Entries=1000
 let g:MRU_Window_Height=15
 let g:MRU_Exclude_Files = '\.tmp$'
-let g:MRU_File=s:ScriptPath . "/vimfiles/mru/_vim_mru_files"
+let g:MRU_File=s:ScriptPath . "/pack/yegappan/start/mru/_vim_mru_files"
 
 " commentary.vim : Comment stuff out; takes a motion as a target 
 " http://www.vim.org/scripts/script.php?script_id=3695
-Plugin 'tpope/vim-commentary'
+" Plugin 'tpope/vim-commentary'
+"vim-commentary
+"为python和shell等添加注释
+autocmd FileType python,shell,coffee set commentstring=#\ %s
+"修改注释风格
+autocmd FileType java,c,cpp set commentstring=//\ %s
 
 " " VIM Table Mode for instant table creation.
 " " https://github.com/dhruvasagar/vim-table-mode
@@ -59,31 +38,31 @@ Plugin 'tpope/vim-commentary'
 
 " restore_view.vim : A plugin for automatically restoring file's cursor position and folding
 " http://www.vim.org/scripts/script.php?script_id=4021
-Plugin 'restore_view.vim'
+" Plugin 'restore_view.vim'
 
 " Tabular
 " https://github.com/godlygeek/tabular
-Plugin 'godlygeek/tabular'
+" Plugin 'godlygeek/tabular'
 
 " Markdown
 " https://github.com/plasticboy/vim-markdown
 " git checkout 2.0.0
 " Add {'pinned': 1} to forbid Vundle to update this plugin
-Plugin 'plasticboy/vim-markdown', {'pinned': 1}
+" Plugin 'plasticboy/vim-markdown', {'pinned': 1}
 
 " surround.vim
 " https://github.com/tpope/vim-surround
 " git checkout v2.1
 " Add {'pinned': 1} to forbid Vundle to update this plugin
-Plugin 'tpope/vim-surround', {'pinned': 1}
+" Plugin 'tpope/vim-surround', {'pinned': 1}
 
 " FX HLSL : Syntax Rules for Microsoft HLSL and FX files
 " http://www.vim.org/scripts/script.php?script_id=855
-Plugin 'fx.vim'
+" Plugin 'fx.vim'
 
 " glsl.vim : Syntax file for the OpenGL Shading Language GLSL GLSlang
 " http://www.vim.org/scripts/script.php?script_id=1002
-Plugin 'glsl.vim'
+" Plugin 'glsl.vim'
 
 " vim-autoread.vim : Have Vim automatically reload a file that has changed externally
 " https://github.com/djoshea/vim-autoread
@@ -91,7 +70,7 @@ Plugin 'glsl.vim'
 
 " vim-hardtime.vim : Have Vim automatically reload a file that has changed externally
 " https://github.com/takac/vim-hardtime
-Plugin 'takac/vim-hardtime'
+" Plugin 'takac/vim-hardtime'
 let g:hardtime_default_on = 1
 let g:hardtime_timeout = 500
 
@@ -117,8 +96,8 @@ let g:hardtime_timeout = 500
 " let g:UltiSnipsSnippetDirectories=["UltiSnips", s:ScriptPath . "/MySnippets"]
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+" call vundle#end()            " required
+" filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
