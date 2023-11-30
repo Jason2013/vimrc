@@ -25,6 +25,7 @@ set fileencoding=utf-8
 set fileformats=dos,unix,mac
 set fileformat=dos
 set guifont=JetBrains_Mono:h13:cANSI:qDRAFT
+set guifontwide=Microsoft_YaHei_Mono:h14:cGB2312:qDRAFT
 
 set viewdir=
 let &viewdir = s:path . "/vimfiles/view"
@@ -65,7 +66,7 @@ set smartindent
 set listchars=eol:$,tab:>-,trail:@,extends:>,precedes:<
 
 " 设置交换文件目录
-set directory=.,$TEMP
+let &directory = s:path . "/swp//"
 
 " 设置 unnamed 寄存器与系统剪切板绑定
 set clipboard=unnamed
