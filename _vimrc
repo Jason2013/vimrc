@@ -16,6 +16,17 @@ function g:Num()
     return g:num
 endfunction
 
+function g:GetDateTimeString()
+    " 获取当前日期和时间
+    let l:datetime = strftime("%c")
+
+    " 创建等号字符串，长度与日期时间字符串相等
+    let l:equal_line = repeat("=", len(l:datetime))
+
+    " 返回两行字符串
+    return l:datetime . "\n" . l:equal_line . "\n"
+endfunction
+
 set encoding=utf-8
 set termencoding=utf-8
 set number
@@ -100,8 +111,8 @@ nnoremap <C-N> :tabe<CR>
 nnoremap <F2> :MRU<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
-nnoremap <F5> "=strftime("%c")<CR>pyypVr=o
-inoremap <F5> <Esc>"=strftime("%c")<CR>pyypVr=o
+nnoremap <F5> o<C-R>=g:GetDateTimeString()<CR><Esc>
+inoremap <F5> <CR><C-R>=g:GetDateTimeString()<CR>
 nnoremap <C-F5> I[<C-R>=strftime("%c")<CR>] 
 inoremap <C-F5> <Esc>I[<C-R>=strftime("%c")<CR>] 
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
