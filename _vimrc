@@ -38,7 +38,11 @@ set fileencoding=utf-8
 set fileformats=dos,unix,mac
 set fileformat=dos
 set guifont=JetBrains_Mono:h14:cANSI:qDRAFT
-set guifontwide=Microsoft_YaHei_Mono:h16:cGB2312:qDRAFT
+
+" guifontwide 仅支持等宽字体
+" 微软雅黑等宽字体
+" https://github.com/chenyium/Microsoft-Yahei-Mono
+set guifontwide=Microsoft\ YaHei\ Mono:h16:cGB2312:qDRAFT
 
 set viewdir=
 let &viewdir = s:path . "/vimfiles/view"
