@@ -19,3 +19,6 @@
 [submodule "pack/beyondmarc/start/glsl"]
 	path = pack/beyondmarc/start/glsl
 	url = git@github.com:beyondmarc/glsl.vim.git
+[submodule "pack/PProvost/start/vim-ps1"]
+	path = pack/PProvost/start/vim-ps1
+	url = git@github.com:PProvost/vim-ps1.git
