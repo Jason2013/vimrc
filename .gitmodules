@@ -13,3 +13,9 @@
 [submodule "pack/martinda/start/Jenkinsfile-vim-syntax"]
 	path = pack/martinda/start/Jenkinsfile-vim-syntax
 	url = https://github.com/martinda/Jenkinsfile-vim-syntax
+[submodule "pack/beyondmarc/start/hlsl"]
+	path = pack/beyondmarc/start/hlsl
+	url = git@github.com:beyondmarc/hlsl.vim.git
+[submodule "pack/beyondmarc/start/glsl"]
+	path = pack/beyondmarc/start/glsl
+	url = git@github.com:beyondmarc/glsl.vim.git
