@@ -18,7 +18,13 @@ endfunction
 
 function g:GetDateTimeString()
     " 获取当前日期和时间
-    let l:datetime = strftime("%c")
+    let l:datetime = strftime("%Y/%m/%d %H:%M:%S")
+    return l:datetime
+endfunction
+
+function g:GetDateTimeLabel()
+    " 获取当前日期和时间
+    let l:datetime = g:GetDateTimeString()
 
     " 创建等号字符串，长度与日期时间字符串相等
     let l:equal_line = repeat("=", len(l:datetime))
@@ -115,10 +121,10 @@ nnoremap <C-N> :tabe<CR>
 nnoremap <F2> :MRU<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
-nnoremap <F5> o<C-R>=g:GetDateTimeString()<CR><Esc>
-inoremap <F5> <CR><C-R>=g:GetDateTimeString()<CR>
-nnoremap <C-F5> I[<C-R>=strftime("%c")<CR>] 
-inoremap <C-F5> <Esc>I[<C-R>=strftime("%c")<CR>] 
+nnoremap <F5> o<C-R>=g:GetDateTimeLabel()<CR><Esc>
+inoremap <F5> <CR><C-R>=g:GetDateTimeLabel()<CR>
+nnoremap <C-F5> I[<C-R>=g:GetDateTimeString()<CR>] 
+inoremap <C-F5> <Esc>I[<C-R>=g:GetDateTimeString()<CR>] 
 nnoremap <F6> :let @+=fnamemodify(@%, ":p:h")<CR>
 nnoremap <F7> :let @+=fnamemodify(@%, ":p")<CR>
 nnoremap <F8> :tabedit <C-R>+<CR>
