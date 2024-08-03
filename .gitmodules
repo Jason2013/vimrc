@@ -22,3 +22,6 @@
 [submodule "pack/PProvost/start/vim-ps1"]
 	path = pack/PProvost/start/vim-ps1
 	url = git@github.com:PProvost/vim-ps1.git
+[submodule "pack/rhysd/start/vim-llvm"]
+	path = pack/rhysd/start/vim-llvm
+	url = git@github.com:rhysd/vim-llvm.git
