@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\*\shell\Goneovim]
+@="Edit in Goneovim"
+"Icon"="C:\\chenchang\\app\\nvim\\goneovim-v0.6.16-windows\\goneovim.exe"
+
+[-HKEY_CLASSES_ROOT\*\shell\Goneovim\command]
+@="\"C:\\chenchang\\app\\nvim\\goneovim-v0.6.16-windows\\goneovim.exe\" \"%1\""
