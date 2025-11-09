@@ -34,7 +34,7 @@ function g:GetDateTimeLabel()
 endfunction
 
 set encoding=utf-8
-set termencoding=utf-8
+" set termencoding=utf-8
 set number
 
 filetype plugin on
@@ -43,16 +43,22 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set fileformats=dos,unix,mac
 set fileformat=dos
-set guifont=JetBrains_Mono:h14:cANSI:qDRAFT
+" gvim
+" set guifont=JetBrains_Mono:h14:cANSI:qDRAFT
+" goneovim
+set guifont=JetBrains_Mono:h11:cANSI:qDRAFT
 
 " guifontwide 仅支持等宽字体
 " 微软雅黑等宽字体
 " https://github.com/chenyium/Microsoft-Yahei-Mono
-set guifontwide=Microsoft\ YaHei\ Mono:h16:cGB2312:qDRAFT
+" gvim
+" set guifontwide=Microsoft\ YaHei\ Mono:h16:cGB2312:qDRAFT
+" goneovim
+set guifontwide=Microsoft\ YaHei\ Mono:h13:cGB2312:qDRAFT
 
 set viewdir=
 let &viewdir = s:path . "/vimfiles/view"
-let &packpath = s:path
+"let &packpath = s:path
 
 " 设置状态行，显示常用信息
 set statusline=%F%m%r%h%w%=\ [%Y]\ %{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [%{&ff}]\ [\%02.8b]\ [\%02.8BH]\ [%04l,%04v][%p%%]\ [%L]
@@ -89,12 +95,13 @@ set smartindent
 set listchars=eol:$,tab:>-,trail:@,extends:>,precedes:<
 
 " 设置交换文件目录
-set swapfile
-let &directory = s:path . "/swp/dir//"
-set backup
-let &backupdir = s:path . "/swp/bdir//"
-set undofile
-let &undodir = s:path . "/swp/udir//"
+set noswapfile
+" let &directory = s:path . "/swp/dir//"
+set nowritebackup
+set nobackup
+" let &backupdir = s:path . "/swp/bdir//"
+set noundofile
+" let &undodir = s:path . "/swp/udir//"
 
 " 设置 unnamed 寄存器与系统剪切板绑定
 set clipboard=unnamed
