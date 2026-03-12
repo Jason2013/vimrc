@@ -44,6 +44,12 @@ source C:/chenchang/app/gvim/_vimrc
 :echo stdpath('config')
 ```
 
+复制脚本启动目录到系统剪贴板：
+
+```
+:let @+=stdpath('config')
+```
+
 使用管理员权限启动 Command Prompt ，在脚本启动目录中创建链接文件：
 
 ```powershell
@@ -66,3 +72,12 @@ mklink C:\Users\jasonche\AppData\Local\nvim\init.lua C:\Users\jasonche\chenchang
 source C:\Users\jasonche\chenchang\study\gvim\_vimrc
 ```
 
+## goneovim 在高分辨率显示器下字体模糊
+
+强制 DPI / 缩放（解决高分屏模糊）
+
+**Windows**
+
+* 右键 Goneovim 快捷方式 → 属性 → 兼容性 → 更改高 DPI 设置
+* 勾选 `替代高 DPI 缩放行为`
+  * 缩放执行：选择 `系统（增强）` 或 `应用程序`
