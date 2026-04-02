@@ -46,7 +46,7 @@ set fileformat=dos
 " gvim
 " set guifont=JetBrains_Mono:h14:cANSI:qDRAFT
 " goneovim
-set guifont=JetBrains_Mono:h11:cANSI:qDRAFT
+set guifont=JetBrains\ Mono:h11:cANSI:qDRAFT
 
 " guifontwide 仅支持等宽字体
 " 微软雅黑等宽字体
