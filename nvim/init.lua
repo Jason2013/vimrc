@@ -36,6 +36,8 @@ vim.keymap.set("i", "<S-Insert>", "<C-r>+")
 vim.api.nvim_create_autocmd("UIEnter", {
   once = true,
   callback = function()
+    pcall(vim.cmd.colorscheme, "desert")
+
     if vim.g.neovide then
       -- vim.o.guifont = "Consolas:h12"
       -- vim.g.neovide_scale_factor = 1.0
@@ -58,3 +60,4 @@ vim.api.nvim_create_autocmd("UIEnter", {
     end
   end,
 })
+
